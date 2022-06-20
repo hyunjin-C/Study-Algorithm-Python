@@ -1,14 +1,13 @@
-# 단순 수식으로 구하기
+# 유클리드 호제법 이용
 
 num1, num2 = map(int, input().split())
 
 
 def GCD(x, y):
-    for i in range(1, min(x, y) + 1):
-        if ((x % i == 0) and (y % i == 0)):
-            result = i
+    while y > 0:
+        x, y = y, x % y
 
-    return result
+    return x
 
 
 def LCM(x, y):
