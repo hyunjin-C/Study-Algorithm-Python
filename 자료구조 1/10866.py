@@ -40,6 +40,6 @@ for i in range(n):
     else:
         command, x = tmp[0], tmp[1]
         if command == 'push_front':
-            deque_list.insert(0, x)
+            deque_list.appendleft(x)
         else:
             deque_list.append(x)
